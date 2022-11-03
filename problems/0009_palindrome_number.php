@@ -6,7 +6,8 @@ class Solution {
      * @param Integer $x
      * @return Boolean
      */
-    function isPalindrome($x) {
+    function isPalindrome(int $x): bool
+    {
       if($x < 0) return false;
       if($x < 10) return true;
       
@@ -22,7 +23,7 @@ class Solution {
         return true;
       }
 
-      return 0;
+      return false;
     }
 }
 

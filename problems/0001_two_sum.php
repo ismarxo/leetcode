@@ -7,9 +7,11 @@ class Solution {
      * @param Integer $target
      * @return Integer[]
      */
-    function twoSum($nums, $target) {
+    function twoSum(array $nums, int $target): array
+    {
         $result = [];
         $summ   = [];
+        $saldo  = 0;
         
         for($i = 0; $i < sizeof($nums); $i++) {
             $saldo = $target - $nums[$i];
